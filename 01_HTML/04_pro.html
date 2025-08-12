@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3rd page</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <ul> <!--Unordered list, used to create bullet points-->
+            <li>Mango</li>
+                <ul>
+                    <li>Color red</li>
+                    <li>Shape round</li>
+                </ul>
+            <li>Apple</li>
+            <li>Banana</li>
+        </ul>
+        <ol> <!--Ordered list, used to create numbered points-->
+            <li>Mango</li>
+                <ol>
+                    <li>Color red</li>
+                    <li>Shape round</li>
+                </ol>
+            <li>Apple</li>
+            <li>Banana</li>
+        </ol>
+        
+        <hr/>
+
+        <table><!--Table tag-->
+            <thead>
+            <caption>Student Data</caption><!--Caption tag used to give title to 
+            the table-->
+            <tr>
+                <th>Name</th>
+                <th>Class</th>
+                <th colspan="2">Extra</th><!--Colspan used to merge 2 or more
+                headings-->
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Kal</td>
+                <td>8<sup>th</sup></td>
+                <td>30</td>
+                <td>Wo</td>
+            </tr>
+            <tr>
+                <td>Mal</td>
+                <td>5<sup>th</sup></td>
+                <td>70</td>
+                <td>Mo</td>
+            </tr>
+            </tbody> 
+        </table>
+        <hr/>
+
+        <form action="action.php"><!--Action attribute defines what action to take 
+            after form get submitted, where to store the data and all.-->
+            <input type="text" placeholder="Enter your username">
+            <input type="password" placeholder="Enter your password">
+            <br>
+            <label for="1"><!--Label tag used to give name to the input field, and 
+                make the text clickable, it also helps screen readers to identify 
+                the form elements-->
+            <input type="radio" value="class XI" name="class" id="1">Class XI
+            </label>
+            <label for="2">
+            <input type="radio" 
+            value="class XII" 
+            name="class" 
+            id="2">Class XII
+            </label>
+            <br>
+            <label for="101">
+                <input type="checkbox" value="math" name="subject" id="101">Math
+            </label>
+            <label for="102">
+                <input type="checkbox" value="scice" name="subject" id="102">Science
+            </label>
+            <label for="103">
+                <input type="checkbox" value="english" name="subject" id="103">English  
+            </label>
+
+            <br>
+
+            Select your city:
+            <select name="city" id="cities">
+                <option value="Jaipur">Jaipur</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+            </select>
+
+            <br>
+
+            <label for="feedback_box">Please enter your feedback:
+            <textarea name="feedback" 
+            placeholder="Enter your message" 
+            id="feedback_box"
+            rows="6"
+            cols="30">
+            </textarea>
+            </label>
+
+            <br>
+
+            <label for="submit">
+                <input type="submit" 
+                value="Done" 
+                id="submit">
+            </label>
+        </form>
+
+        <hr/>
+
+        <iframe width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/WBGzSoMGsmU?si=LVX5vDy0MHTJrrvA" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen></iframe>
+
+        <hr/>
+
+        <video src="/Videos/VID-20241222-WA0052.mov" 
+        width="560" 
+        height="315"
+        controls></video>
+
+    </main>
+    <footer></footer>
+</body>
+</html>

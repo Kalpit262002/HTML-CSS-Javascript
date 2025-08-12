@@ -1,0 +1,56 @@
+<!--Semantic tags -> <header>, <footer> Clearly by name we understand
+    Non-semantic tags -> <div>, <span> do not provide any meaning about their content-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd page</title>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+
+    <main>
+        <!--Logical tags used while building web page-->
+        <section>Education<!--Used to create different sections-->
+            <p>10th, 12th, Bachelors</p>
+        </section> 
+        <section>Experience
+            <p>Intern at XYZ Company</p>
+        </section>
+
+        <aside>This is an ad</aside><!--Used to create side content, like ads or links
+        which is not read by browsers-->
+        <article><h2>My trip</h2>
+            <p>I went to the mountains and it was a great experience.</p>
+        </article><!--Used to create self-contained content that can stand alone,
+         like blog posts or news articles-->
+        
+        
+         <a href="https://www.google.com" target="_main">Google</a> <!--By this
+        you will open link in new tab-->
+        <br>
+
+
+        <a href="https://www.google.com/search?sca_esv=13c2871c93da831a&sxsrf=AE3TifMHclR2dBFVVgnSA-Ipu9et3WbMhQ:1754924598463&udm=2&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ1Y6MJ25_tmWITc7uy4KIeioyp3OhN11EY0n5qfq-zEMIfNXJSETLiduRLwcPMYYgaP5C_QaeDTh1EEfp_wdZI2Q19zwFiz9g7em77t4hu6UwFIdqdAj7aC-x_EQ3WTlNQITofHpcYzdI_fo2G0D6XNk0plEsKi3yNAx6HsIz3Z89hY6Y4geQ-vCcixFbqfE1SIz8mA&q=flower+images&sa=X&ved=2ahUKEwi_97HKg4OPAxUc2TgGHcbkFZYQtKgLegQIEBAB&biw=1536&bih=738&dpr=1.25" target="_main"><img src="Images/sunflower.jpg" alt="Flower images" height="200"></a> <!--Make images clickable, just put the image tag between anchor tag-->
+        <br>
+
+        <div><!--Div is a container used to store other HTML elements,
+            it is a block-level element(takes full width of the web page)
+            There are few inline elements like <span> and <a> tags, they take up only as much width as necessary-->
+            <p>This is a paragraph inside a div.</p>
+        </div>
+
+        <span>
+            This is a span inside the main content area.
+        </span><!--Inline element,
+        also a container used to store other HTML elements-->
+        
+    </main>
+    <footer>
+        <h6>Contact information : +91-123588999</h6>
+    </footer>
+</body>
+</html>
