@@ -1,0 +1,72 @@
+/* CSS stands for Cascading Style Sheets. */
+/* CSS reads the file from top to bottom, and applies the styles in the order they are defined. Hence styles written lower side will have higher priority. */
+button{
+    color:red;
+    background-color: azure;
+}
+h1{
+    color:#00ff00;/*This is hex color system, in this range of colors are 00 to ff, since we have 3 primary color red, green, blue, so if we saying 00ff00, this means no red, full green, no blue*/
+}
+body{
+    background-color: rgb(97, 94, 94); /*Element selector */
+}
+
+*{
+    color:aqua; /* Universal selector - This will change the color of all text to aqua */
+}                       
+
+#heading_one{  /*Id selector*/
+    color:blue;
+}
+#heading_two{
+    color:yellow;
+}
+
+.testing_class{  /*Class selector*/
+    color:orchid;
+}
+
+#long_passage_container{
+    background-color: red;
+}
+
+#long_passage {
+    color: white;
+    text-align: end; /* Align text to the right, since in english we read from left to right and therefore end is at right, text align work according to parent. */
+}
+
+#long_passage_title {
+    color: yellow;
+    text-align: center;
+    text-decoration: underline blueviolet;
+}
+
+#1{
+    font-weight: 200;
+}
+
+#2{
+    font-weight: 400;
+}
+
+#3{
+    font-weight: 900;
+}
+
+#Second_para{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* This is known as fallback mechanism , in this case if Arial is not available on a browser, it will try Helvetica, and if not available it will use any sans-serif font.
+    There are 2 types of font types: Generic and Specific,
+    1.)Generic fonts are not specific to any one operating system or device, and are generally available on all platforms.
+    There are 5 types of generic fonts:
+    a.)Serif
+    b.)Sans-serif
+    c.)Monospace
+    d.)Cursive
+    e.)Fantasy
+    2.)Specific fonts are those that comes under a particular brand or foundry, and may not be available on all platforms. for example, Arial and Times New Roman. 
+    Now arial comes under sans-serif fonts but since sans-serif fonts have many fonts 
+    other than arial, hence arial itself is a specific font. */
+    font-size: 20px;
+    line-height: 45px;
+    text-transform: capitalize;
+}

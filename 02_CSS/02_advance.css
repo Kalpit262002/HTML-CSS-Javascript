@@ -1,0 +1,83 @@
+#heading1{
+    border-color: aqua;
+    border-width: 10px;
+    border-style: dashed;
+    border-radius: 30%;
+}
+
+#long_passage_container{
+    border: 20px double lightcoral; /* Shorthand technique, Width, style, color */
+    border-radius: 20px; /* This will make the border rounded */
+}
+
+#Square_div{
+    border: 5px solid blue;
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    border-radius: 50%; /* This will make the div a circle, if div is a square */
+    padding-left: 60px; 
+    padding-top: 20px;
+    /* Shorthand technique for padding:
+    1.) padding: 50px --> This will apply padding to all sides 
+    2.) padding: 50px 25px --> This will apply 50px padding to top and bottom, and 25px padding to left and right
+    3.) padding: 50px 25px 10px --> This will apply 50px padding to top, 25px padding to left and right, and 10px padding to bottom
+    4.) padding: 50px 25px 10px 5px --> This will apply 50px padding to top, 25px padding to right, 10px padding to bottom, and 5px padding to left(clockwise)
+    Same goes with margin tag */
+}
+
+#Outer_rec{
+    height:200px;
+    width: 80px;
+    background-color: gray;
+    padding-top: 1px;
+}
+
+#Inner_cir_1{
+    margin-top: 14px;
+    margin-left: 15px;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+#Inner_cir_2{
+    margin-top: 10px;
+    margin-left: 15px;
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+#Inner_cir_3{
+    margin-top: 10px;
+    margin-left: 15px;
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+#display01{
+    height: 100px;
+    width: 100px;
+    background-color: lightblue;
+    display: inline-block;
+}
+
+#display02{
+    height: 100px;
+    width: 100px;
+    background-color: lightgreen;
+    display: none; /* This will hide the element, no space will be left for this. */
+    /* visibility: hidden; --> This will hide the element, but space will be left for this. */
+}
+
+#display03{
+    height: 100px;
+    width: 100px;
+    background-color: rgba(224, 10, 10, 0.3); /*  This a(0.3) is an opacity value */
+    display: inline-block;
+}

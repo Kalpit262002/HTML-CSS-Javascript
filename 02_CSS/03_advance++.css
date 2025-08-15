@@ -1,0 +1,105 @@
+/* px is absolute length unit, if we use % it will be relative to the parent element */
+#parent{
+    width: 300px;
+    height: 300px;
+    background-color: lightgray;
+    padding-top: 1px;
+    font-size: 20px;
+}
+
+#child{
+    margin-top: 50%;
+    margin-left: 50%;
+    width: 30%;
+    height: 30%;
+    background-color: lightblue;
+    font-size: 1.5em; /* Here em is relative to the font-size of the parent element, hence 1.5em here means 1.5 times of parents div 20px, that is 30px */
+}
+
+/* 1.) rem is root em, it is relative to the font-size of the root element (html), hence 1rem means 1 times of root font-size.
+2.) viewport units (vw, vh) are relative to the size of the viewport (browser window), hence 1vw means 1% of the viewport width and 1vh means 1% of the viewport height. */
+
+.position_testing{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+}
+
+#position_container{
+    /* background-color: rgb(240, 139, 240); */
+    height: 500px;
+    position: relative;
+}
+
+#position1{
+    position: static; /* This is the default position, in this we can't change any top, bottom, left, right, z-index values, even if we try, it doesn't give any effect. */
+    /* background-color: lightcoral; */
+    top: 100px;
+    background-color: blueviolet; 
+}
+
+#position2{
+    position: relative; /* This will position the element relative to its own normal position */
+    background-color: lightgreen;
+    top: 50px;
+    left: 50px;
+}
+
+#position3{
+    position: absolute; /* This will position the element relative to the nearest positioned ancestor but if nearest positioned ancestor is not found or is static by default, it will be relative to the viewport(most probably body/browser) (instead of the viewport like fixed positioning) */
+    background-color: blanchedalmond;
+    top: 10px;
+    left:600px;
+    z-index: 1; /* By default container written later comes on top in case of overlapping and z-index for all is 0, here div5 on top, but now we making div3 z-index 1 that is greater than 0 hence div3 will be on top having more priority */
+}
+
+#position4{
+    position: fixed; /* This will position the element relative to the viewport, it will not move even if the page is scrolled */
+    background-color: lightseagreen;
+    margin-top: 100px;
+    top:20px;
+    right: 50px;
+    z-index: 1;
+}
+
+#position5{
+    position: sticky; /* This will position the element relative to the viewport until a certain scroll position is reached, after that it will behave like fixed positioning, inside its parent container, but in fixed postioning there is no parent */
+    background-color: cadetblue;
+    top: 30px;
+    left: 30px;
+    z-index: -1; /* This will position the element behind other elements having -1 low priority, we want something even behind this we do -2 to it and so on */
+}
+
+#large_para{
+    font-size: 50px;
+}
+
+.imagebox{
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    display: inline-block;
+    margin: 10px;
+    color: red;
+}
+
+#imagebox1{
+    background-image: url("Images/sunflower.jpg"); /* Background image has more priority than color always */
+    background-color: lightblue;
+}
+
+#imagebox2{
+    background-image: url("Images/sunflower.jpg");
+    background-size: cover;/* This will cover the entire div */
+}
+
+#imagebox3{
+    background-image: url("Images/sunflower.jpg");
+    background-size: contain;/* This will contain the image within the div */
+}
+
+#imagebox4{
+    background-image: url("Images/sunflower.jpg");
+    background-size: auto;/* This will use the original size of the image */
+}
+
